@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      DOJO IONIC
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <img [src]="userInfo.avatar_url" alt="User Avatar" class="circle-image">
+    <ion-card-content>
+      <div class="user-content">
+      <ion-card-title>
+        <h2>{{userInfo.login}}</h2>
+      </ion-card-title>
+        <p> Engineering Student</p>
+        <p>{{userInfo.public_repos}}</p>
+    </div>
+    </ion-card-content>
+  </ion-card>
+  <button ion-button block (click) = "testDojo()">Test</button>
+
+
+
+</ion-content>
